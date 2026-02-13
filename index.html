@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Добровольческая бригада «Эспаньола»</title>
-
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -166,22 +169,31 @@
     <section class="tradition">
         <div class="container">
             <h2 class="section__title">Преемственность и традиции</h2>
-            <div class="tradition__list df">
-                <div class="tradition__item">
-                    <h3 class="tradition__title">Опыт</h3>
-                    <p class="tradition__text">Сохранён костяк опытных бойцов</p>
-                    <img src="images/t1.png" alt="t1">
+            <div class="tradition__list swiper df">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="tradition__item">
+                            <h3 class="tradition__title">Опыт</h3>
+                            <p class="tradition__text">Сохранён костяк опытных бойцов</p>
+                            <img src="images/t1.png" alt="t1">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tradition__item">
+                            <h3 class="tradition__title">Инициатива</h3>
+                            <p class="tradition__text">Добровольческий дух</p>
+                            <img src="images/t2.png" alt="t2">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tradition__item">
+                            <h3 class="tradition__title">Организация</h3>
+                            <p class="tradition__text">Новый уровень организации</p>
+                            <img src="images/t3.png" alt="t3">
+                        </div>
+                    </div>
                 </div>
-                <div class="tradition__item">
-                    <h3 class="tradition__title">Инициатива</h3>
-                    <p class="tradition__text">Добровольческий дух</p>
-                    <img src="images/t2.png" alt="t2">
-                </div>
-                <div class="tradition__item">
-                    <h3 class="tradition__title">Организация</h3>
-                    <p class="tradition__text">Новый уровень организации</p>
-                    <img src="images/t3.png" alt="t3">
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -311,20 +323,36 @@
         </div>
     </section>
     <section class="gallery">
-        <div class="gallery__list df ">
-            <div class="gallery__item">
-                <img src="images/g1.png" alt="">
-            </div>
-            <div class="gallery__item">
-                <img src="images/g2.png" alt="">
-            </div>
-            <div class="gallery__item">
-                <img src="images/g3.png" alt="">
-            </div>
+        <div class="gallery__list gallery__list--top df  ">
+                <div class="gallery__item ">
+                    <img src="images/g1.png" alt="">
+                </div>
+                <div class="gallery__item ">
+                    <img src="images/g2.png" alt="">
+                </div>
+                <div class="gallery__item ">
+                    <img src="images/g3.png" alt="">
+                </div>
+                <div class="gallery__item ">
+                    <img src="images/g1.png" alt="">
+                </div>
+                <div class="gallery__item ">
+                    <img src="images/g2.png" alt="">
+                </div>
+                <div class="gallery__item ">
+                    <img src="images/g3.png" alt="">
+                </div>
+
         </div>
-        <div class="gallery__list df ">
+        <div class="gallery__list gallery__list--bottom df ">
             <div class="gallery__item">
                 <img src="images/g6.png" alt="">
+            </div>
+            <div class="gallery__item">
+                <img src="images/g4.png" alt="">
+            </div>
+            <div class="gallery__item">
+                <img src="images/g5.png" alt="">
             </div>
             <div class="gallery__item">
                 <img src="images/g4.png" alt="">
@@ -368,55 +396,64 @@
     <section class="news">
         <div class="container">
             <h2 class="section__title">Новости Эспаньола</h2>
-            <div class="news__list df">
-                <div class="new__item">
-                    <div class="news__img">
-                        <div class="news__logo">
-                            <img src="images/logo-small.svg" alt="">
+            <div class="news__list swiper df">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="news__item">
+                            <div class="news__img">
+                                <div class="news__logo">
+                                    <img src="images/logo-small.svg" alt="">
+                                </div>
+                                <img src="images/news.png" alt="">
+                            </div>
+                            <div class="news__content">
+                                <h3 class="news__title">Прежде всего</h3>
+                                <p class="news__text">Прежде всего, высокотехнологичная концепция общественного уклада говорит о возможностях своевременного выполнения сверхзадачи. </p>
+                                <div class="news__bottom df j-spc-btw">
+                                    <span class="news__date">01.01.2026</span>
+                                    <a href="" class="news__read-more">Читать подробнее</a>
+                                </div>
+                            </div>
                         </div>
-                        <img src="images/news.png" alt="">
                     </div>
-                    <div class="news__content">
-                        <h3 class="news__title">Прежде всего</h3>
-                        <p class="news__text">Прежде всего, высокотехнологичная концепция общественного уклада говорит о возможностях своевременного выполнения сверхзадачи. </p>
-                        <div class="news__bottom df j-spc-btw">
-                            <span class="news__date">01.01.2026</span>
-                            <a href="" class="news__read-more">Читать подробнее</a>
+                    <div class="swiper-slide">
+                        <div class="news__item">
+                            <div class="news__img">
+                                <div class="news__logo">
+                                    <img src="images/logo-small.svg" alt="">
+                                </div>
+                                <img src="images/news.png" alt="">
+                            </div>
+                            <div class="news__content">
+                                <h3 class="news__title">Прежде всего</h3>
+                                <p class="news__text">Прежде всего, высокотехнологичная концепция общественного уклада говорит о возможностях своевременного выполнения сверхзадачи. </p>
+                                <div class="news__bottom df j-spc-btw">
+                                    <span class="news__date">01.01.2026</span>
+                                    <a href="" class="news__read-more">Читать подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="news__item">
+                            <div class="news__img">
+                                <div class="news__logo">
+                                    <img src="images/logo-small.svg" alt="">
+                                </div>
+                                <img src="images/news.png" alt="">
+                            </div>
+                            <div class="news__content">
+                                <h3 class="news__title">Прежде всего</h3>
+                                <p class="news__text">Прежде всего, высокотехнологичная концепция общественного уклада говорит о возможностях своевременного выполнения сверхзадачи. </p>
+                                <div class="news__bottom df j-spc-btw">
+                                    <span class="news__date">01.01.2026</span>
+                                    <a href="" class="news__read-more">Читать подробнее</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="new__item">
-                    <div class="news__img">
-                        <div class="news__logo">
-                            <img src="images/logo-small.svg" alt="">
-                        </div>
-                        <img src="images/news.png" alt="">
-                    </div>
-                    <div class="news__content">
-                        <h3 class="news__title">Прежде всего</h3>
-                        <p class="news__text">Прежде всего, высокотехнологичная концепция общественного уклада говорит о возможностях своевременного выполнения сверхзадачи. </p>
-                        <div class="news__bottom df j-spc-btw">
-                            <span class="news__date">01.01.2026</span>
-                            <a href="" class="news__read-more">Читать подробнее</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="new__item">
-                    <div class="news__img">
-                        <div class="news__logo">
-                            <img src="images/logo-small.svg" alt="">
-                        </div>
-                        <img src="images/news.png" alt="">
-                    </div>
-                    <div class="news__content">
-                        <h3 class="news__title">Прежде всего</h3>
-                        <p class="news__text">Прежде всего, высокотехнологичная концепция общественного уклада говорит о возможностях своевременного выполнения сверхзадачи. </p>
-                        <div class="news__bottom df j-spc-btw">
-                            <span class="news__date">01.01.2026</span>
-                            <a href="" class="news__read-more">Читать подробнее</a>
-                        </div>
-                    </div>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -557,6 +594,8 @@
         </div>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
 <script src="js/main.js"></script>
 </body>
 </html>
