@@ -925,6 +925,8 @@ footer{
     flex-direction: column;
     height: 100%;
     max-width: 300px;
+    position: relative;
+    z-index: 1;
 }
 .main-direction__item:nth-child(3) .main-direction__item--content {
     max-width: 230px;
@@ -992,4 +994,214 @@ footer{
     text-align: left;
     padding-left: 20px;
     color: #c4c4c4;
+}
+.faq__list{
+    padding-top: 40px;
+}
+.faq__item{
+    width: 100%;
+    background: #15171B;
+    padding: 40px 50px;
+    margin-bottom: 20px;
+    list-style: none;
+    position: relative;
+}
+.faq__item:last-child{
+    margin-bottom: 0;
+}
+.faq__item summary{
+    font-family: Archivo, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+    color: #e6e6e6;
+    cursor: pointer;
+}
+.faq__item div{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #c4c4c4;
+    padding-top: 30px;
+}
+details summary::marker {
+    content: ""; /* Custom marker when closed */
+
+}
+.faq__item summary:after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 37px;
+    right: 50px;
+    background: url('../images/plus.svg') no-repeat;
+    cursor: pointer;
+}
+.faq__item[open] summary:after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 37px;
+    right: 50px;
+    background: url('../images/minus.svg') no-repeat center;
+
+}
+.become--rec .become__item{
+    width: calc(100%/3 - 14px);
+    padding: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.become--rec .become__icon{
+    width: 100px;
+    height: 100px;
+    background: #0E0F11;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.become--rec .become__icon svg{
+    width: 60px;
+}
+.become--rec .become__title{
+    font-family: Archivo, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: left;
+    color: #e6e6e6;
+    text-transform: unset;
+    margin-bottom: 7px;
+}
+.become--rec  p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #c4c4c4;
+}
+.become--rec .become__item:last-child .become__title{
+    margin-top: 0;
+}
+.become--rec .become__item:last-child .btn__white{
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+.get__content{
+    margin-top: 40px;
+    gap: 20px;
+}
+.get__left{
+    max-width: 650px;
+}
+.get__right{
+    max-width: calc(100% - 670px);
+    width: 100%;
+}
+.get__item{
+    min-height: 200px;
+    background: #15171B;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 40px 50px;
+}
+.get__item:last-child{
+    margin-bottom: 0;
+}
+.get__item h3{
+    font-family: Archivo, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: left;
+    color: #e6e6e6;
+    margin-bottom: 10px;
+}
+.get__item ul{
+    padding-left: 22px;
+}
+.get__item ul li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #c4c4c4;
+    margin-bottom: 5px;
+    position: relative;
+}
+.get__item ul li:last-child{
+    margin-bottom: 0;
+}
+.get__item ul li:before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #A3A3A3;
+    left: -13px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.tradition--rec .tradition__item{
+    height: 539px;
+    background: #15171B;
+    border-radius: 8px;
+    padding: 30px;
+}
+.tradition--rec .tradition__item .tradition__title{
+    margin-bottom: 20px;
+}
+.tradition--rec .tradition__item li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 37px;
+    color: #c4c4c4;
+    margin-bottom: 10px;
+    position: relative;
+}
+.tradition--rec .tradition__item li:last-child{
+    margin-bottom: 0;
+}
+.tradition--rec .tradition__item li:before{
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: #747474;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.directions--rec{
+    padding-top: 120px;
+}
+.directions--rec .direction__title{
+    background: #1c1f26;
+
+    border: 1px solid rgba(163, 163, 163, 0.26);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: left;
+
+    color: #e6e6e6;
+}
+.directions--rec .direction__text{
+    margin-top: 10px;
 }
