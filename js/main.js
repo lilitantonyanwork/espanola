@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     var swiper = new Swiper(".news__list", {
         slidesPerView: 3,
         spaceBetween: 20,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
         breakpoints: {
             0:{
                 slidesPerView: 1,
@@ -45,6 +49,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     var swiper1 = new Swiper(".tradition__list", {
         slidesPerView: 3,
         spaceBetween: 20,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
         breakpoints: {
             0:{
                 slidesPerView: 1,
