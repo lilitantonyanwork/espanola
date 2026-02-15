@@ -1,4 +1,4 @@
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1441px){
     .gallery{
         width: 100%;
         margin: 0 auto;
@@ -21,10 +21,10 @@
 
 }
 @media screen and (max-width: 1440px){
-    .gallery__list--top .gallery__item:nth-child(n+5) {
+    .gallery__list--top .gallery__item:nth-child(n+4) {
         display: none;
     }
-    .gallery__list--bottom .gallery__item:nth-child(n+5) {
+    .gallery__list--bottom .gallery__item:nth-child(n+4) {
         display: none;
     }
     .gallery__list--bottom .gallery__item:last-child {
