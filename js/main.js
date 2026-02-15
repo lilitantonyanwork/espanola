@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             },
             768: {
                 slidesPerView: 2,
-                spaceBetween: 40,
+                spaceBetween: 20,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             },
             1024: {
                 slidesPerView: 3,
-                spaceBetween: 50,
+                spaceBetween: 20,
             },
         },
     });
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             },
             768: {
                 slidesPerView: 2,
-                spaceBetween: 40,
+                spaceBetween: 20,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             },
             1024: {
                 slidesPerView: 3,
-                spaceBetween: 50,
+                spaceBetween: 20,
             },
         },
     });
