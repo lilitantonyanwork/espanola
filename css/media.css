@@ -526,6 +526,12 @@
         padding-top: 30px;
         padding-bottom: 0;
     }
+    .article__left{
+        padding: 20px;
+    }
+    .article {
+        padding-top: 70px;
+    }
 }
 @media screen and (max-width: 768px){
 .banner__right{
@@ -623,6 +629,27 @@
     .top-news__content{
         margin-left: 0;
     }
+    .article__content{
+        flex-direction: column;
+    }
+    .article__left{
+        max-width: 100%;
+    }
+    .article__right{
+        max-width: 100%;
+        align-items: center;
+        height: auto;
+    }
+    .article__right img{
+        margin-top: 30px;
+    }
+    .aside__socials{
+        padding-left: 0;
+    }
+    .article__right h3{
+        text-align: center;
+    }
+
 }
 @media screen and (max-width: 700px){
     .main-direction__item {
