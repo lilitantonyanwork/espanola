@@ -154,6 +154,18 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    .photo__content{
+        width: calc(100% - 60px);
+    }
+    .photo__list{
+        width: 100%;
+    }
+    .photo__item{
+        width: calc(100% / 3 - 8px);
+    }
+    .top-news__content{
+        margin-bottom: 0;
+    }
 }
 @media screen and (max-width: 1024px){
     .menu{
@@ -253,6 +265,20 @@
     }
     .get__right {
         max-width: calc(100% - 520px);
+    }
+    .top-news__left {
+        max-width: 450px;
+        width: 100%;
+    }
+    .top-news__left img{
+        max-width: 500px;
+
+    }
+    .top-news__right{
+        max-width: calc(100% - 450px);
+    }
+    .top-news__content{
+        gap: 20px;
     }
 }
 @media screen and (max-width: 900px){
@@ -480,6 +506,26 @@
     .training__item:nth-child(3) {
         margin-top: 0;
     }
+    .video, .interview {
+        padding-bottom: 50px;
+    }
+    .video__content h3{
+        font-size: 24px;
+    }
+    .photo__content h3{
+        font-size: 24px;
+    }
+    .top-news__left img {
+        max-width: 400px;
+    }
+    .top-news__left {
+        max-width: 350px;
+    }
+    .top-news__right {
+        max-width: calc(100% - 350px);
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
 }
 @media screen and (max-width: 768px){
 .banner__right{
@@ -548,6 +594,35 @@
     .read-more{
         font-size: 16px;
     }
+    .video__content{
+        flex-direction: column;
+        gap: 120px;
+    }
+    .video, .interview {
+        padding-bottom: 100px;
+    }
+    .top-news__content{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .top-news__left img{
+        position: relative;
+        max-width: 100%;
+        left: 0;
+    }
+    .top-news__left{
+        max-width: 100%;
+    }
+    .top-news__right{
+        max-width: 100%;
+        padding-top: 0;
+    }
+    .news--page .news__item {
+        width: calc(100% / 2 - 10px);
+    }
+    .top-news__content{
+        margin-left: 0;
+    }
 }
 @media screen and (max-width: 700px){
     .main-direction__item {
@@ -562,6 +637,7 @@
     .main-direction__item:first-child:before, .main-direction__item:nth-child(4):before, .main-direction__item:nth-child(5):before {
         background-size: 40%;
     }
+
 }
 @media screen and (max-width: 600px){
     .banner__actions{
@@ -750,6 +826,17 @@
     .faq__item summary{
         padding-right: 50px;
     }
+    .video, .interview {
+        padding-bottom: 70px;
+    }
+    .photo__item {
+        width: calc(100% / 2 - 5px);
+    }
+    .photo__item img{
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
 }
 @media screen and (max-width: 480px) {
     .section__title {
@@ -834,9 +921,46 @@
     .training__item p{
         padding-left: 10px;
     }
+    .video__right,  .video__left{
+        padding: 20px;
+    }
+    .video__item{
+        left: 20px;
+    }
+    .video__content{
+        gap: 60px;
+    }
+    .video, .interview {
+        padding-bottom: 0;
+    }
+    .photo__content{
+        padding-top: 30px;
+    }
+    .photo__content h3{
+        padding-left: 20px;
+    }
 
+    .photo__list{
+        left: 20px;
+    }
+    .photo__content {
+        width: calc(100% - 20px);
+    }
+    .photo__bottom{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .news--page .news__item {
+        width: 100%;
+    }
+    .news--page .news__list{
+        margin-bottom: 0;
+    }
+    .top-news__right .btn__white{
+        width: 100%;
+    }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 380px) {
     .tradition__list{
         padding-bottom: 100px;
     }

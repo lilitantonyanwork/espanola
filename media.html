@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добровольческая бригада «Эспаньола»</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<header>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__content df a-center">
+                <button class="btn btn__menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M2.5 5H17.5M2.5 10H17.5M2.5 15H17.5" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="header__logo">
+                    <a href="/">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                </div>
+                <ul class="menu df a-center">
+                    <li class="menu__item ">
+                        <a href="index.html" class="menu__link">Главная</a>
+                    </li>
+                    <li class="menu__item ">
+                        <a href="about.html" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="recruting.html" class="menu__link">Рекрутинг</a>
+                    </li>
+                    <li class="menu__item menu__item--active">
+                        <a href="" class="menu__link">Медиа</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Новости</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Мерч</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="header__socials df">
+                    <a href="" class="header__socials--link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path d="M2.45383 14.8426L8.49174 16.8932L22.8264 8.12968C23.0342 8.00259 23.2471 8.28481 23.0679 8.44977L12.2155 18.4389L11.8119 24.0313C11.7812 24.4567 12.2936 24.6936 12.5978 24.3945L15.9392 21.1088L22.0477 25.7329C22.7061 26.2314 23.6595 25.8801 23.8371 25.0736L28.0905 5.76109C28.3331 4.65937 27.2536 3.72971 26.2 4.13317L2.42311 13.238C1.67724 13.5236 1.69755 14.5858 2.45383 14.8426Z" fill="#A3A3A3"/>
+                        </svg>
+                    </a>
+                    <a href="" class="header__socials--link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.8193 17.3066C26.8144 18.2782 27.8647 19.1923 28.7573 20.2619C29.1515 20.7372 29.5248 21.2276 29.8104 21.7792C30.215 22.5633 29.8485 23.4262 29.1454 23.473L24.775 23.471C23.6477 23.5646 22.7485 23.1108 21.9924 22.3401C21.3873 21.7237 20.8269 21.0678 20.2451 20.4306C20.0066 20.1702 19.7569 19.9252 19.4586 19.7315C18.862 19.3442 18.3441 19.4628 18.0032 20.0851C17.6559 20.718 17.5772 21.4188 17.5431 22.1241C17.4962 23.1533 17.1852 23.4238 16.1514 23.4709C13.9421 23.5751 11.8454 23.2409 9.89757 22.1264C8.18032 21.1439 6.84868 19.7568 5.68962 18.1865C3.43292 15.1289 1.70474 11.769 0.15151 8.31501C-0.198109 7.53682 0.0575753 7.11909 0.916197 7.10431C2.34198 7.07661 3.76756 7.07858 5.19501 7.10234C5.77449 7.11081 6.15811 7.44318 6.38186 7.99063C7.15325 9.88736 8.09713 11.6919 9.28191 13.3646C9.59743 13.81 9.91915 14.2553 10.3773 14.5687C10.8841 14.9158 11.27 14.8008 11.5085 14.2362C11.6598 13.8782 11.726 13.4926 11.7601 13.1091C11.8731 11.79 11.8879 10.4731 11.6898 9.15865C11.5682 8.33827 11.1061 7.80719 10.2875 7.65195C9.86977 7.5728 9.93197 7.41736 10.1342 7.17892C10.4855 6.7677 10.8159 6.51172 11.4745 6.51172H16.4139C17.1915 6.66519 17.3642 7.01451 17.4706 7.79694L17.4748 13.2835C17.4664 13.5864 17.6261 14.4852 18.1717 14.6857C18.6084 14.8284 18.8962 14.4791 19.1582 14.2022C20.3408 12.9471 21.1848 11.4637 21.9389 9.92777C22.2735 9.25239 22.5612 8.55098 22.8401 7.85017C23.0467 7.33012 23.3709 7.07424 23.9566 7.08558L28.7105 7.08982C28.8514 7.08982 28.994 7.09189 29.1305 7.11525C29.9316 7.25176 30.1511 7.59636 29.9037 8.37859C29.5139 9.60585 28.7554 10.6286 28.0138 11.6561C27.221 12.753 26.3731 13.8124 25.5869 14.9159C24.8646 15.9235 24.922 16.4315 25.8193 17.3066Z" fill="#A3A3A3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="banner">
+        <div class="container">
+            <div class="banner__content df  ">
+                <div class="banner__left">
+                    <h1 class="banner__title">Добровольческая бригада «Эспаньола»</h1>
+                    <p class="banner__text">Легализованное подразделение в составе Министерства обороны Российской Федерации</p>
+                    <div class="banner__actions df">
+                        <a href="" class="btn btn__white">Вступить в бригаду</a>
+                        <a href="" class="btn btn__outline">Бригада сегодня</a>
+                    </div>
+                </div>
+                <div class="banner__right">
+                    <img src="images/banner-right.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video">
+        <div class="container">
+            <h2 class="section__title">Видео</h2>
+            <div class="video__content df">
+                <div class="video__left">
+                    <h3>Выполнение задач в зоне СВО</h3>
+                    <p>Подразделения бригады выполняют поставленные командованием задачи в районе проведения специальной военной операции в соответствии с полученными приказами и боевыми распоряжениями.</p>
+
+                        <div class="video__item">
+                            <img src="images/v1.png" alt="v1">
+                            <span class="video__play"></span>
+                        </div>
+
+                </div>
+                <div class="video__right">
+                    <h3>Выполнение задач в зоне СВО</h3>
+                    <p>Подразделения бригады выполняют поставленные командованием задачи в районе проведения специальной военной операции в соответствии с полученными приказами и боевыми распоряжениями.</p>
+                    <div class="video__item">
+                        <img src="images/v2.png" alt="v1">
+                        <span class="video__play"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="interview">
+        <div class="container">
+            <h2 class="section__title">Интервью</h2>
+            <div class="video__content df">
+                <div class="video__left">
+                    <h3>Выполнение задач в зоне СВО</h3>
+                    <p>Подразделения бригады выполняют поставленные командованием задачи в районе проведения специальной военной операции в соответствии с полученными приказами и боевыми распоряжениями.</p>
+
+                    <div class="video__item">
+                        <img src="images/v1.png" alt="v1">
+                        <span class="video__play"></span>
+                    </div>
+
+                </div>
+                <div class="video__right">
+                    <h3>Выполнение задач в зоне СВО</h3>
+                    <p>Подразделения бригады выполняют поставленные командованием задачи в районе проведения специальной военной операции в соответствии с полученными приказами и боевыми распоряжениями.</p>
+                    <div class="video__item">
+                        <img src="images/v2.png" alt="v1">
+                        <span class="video__play"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="photo">
+        <div class="container">
+            <h2 class="section__title">Фото</h2>
+            <div class="photo__content">
+                <h3>Тренировочный процесс</h3>
+                <div class="photo__list df f-wrap">
+                    <div class="photo__item">
+                        <img src="images/photo1.png" alt="">
+                    </div>
+                    <div class="photo__item">
+                        <img src="images/photo2.png" alt="">
+                    </div>
+                    <div class="photo__item">
+                        <img src="images/photo1.png" alt="">
+                    </div>
+                    <div class="photo__item">
+                        <img src="images/photo2.png" alt="">
+                    </div>
+                    <div class="photo__item">
+                        <img src="images/photo1.png" alt="">
+                    </div>
+                    <div class="photo__item">
+                        <img src="images/photo2.png" alt="">
+                    </div>
+                </div>
+                <div class="photo__bottom df j-spc-btw">
+                    <div class="photo__count">6 из 40</div>
+                    <a href="" class="show__more">Показать еще
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="24" viewBox="0 0 13 24" fill="none">
+                            <path d="M6.00004 15.6548L2.06214 11.6031C1.99535 11.5344 1.91849 11.5 1.83167 11.5C1.74484 11.5 1.66798 11.5343 1.60133 11.6031L1.10027 12.1186C1.03352 12.1873 1 12.2664 1 12.3555C1 12.4449 1.03352 12.5239 1.10027 12.5926L5.76953 17.397C5.83631 17.4657 5.91317 17.5 6 17.5C6.08686 17.5 6.16369 17.4657 6.23047 17.397L10.8997 12.5929C10.9666 12.5241 11 12.445 11 12.3556C11 12.2664 10.9666 12.1873 10.8997 12.1186L10.399 11.6031C10.3322 11.5344 10.2553 11.5001 10.1684 11.5001C10.0817 11.5001 10.0049 11.5344 9.93807 11.6031L6.00004 15.6548Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="photo__content">
+                <h3>Тренировочный процесс</h3>
+                <div class="photo__list df f-wrap">
+                    <div class="photo__item">
+                        <img src="images/photo1.png" alt="">
+                    </div>
+                    <div class="photo__item">
+                        <img src="images/photo2.png" alt="">
+                    </div>
+                    <div class="photo__item">
+                        <img src="images/photo1.png" alt="">
+                    </div>
+                    <div class="photo__item">
+                        <img src="images/photo2.png" alt="">
+                    </div>
+                    <div class="photo__item">
+                        <img src="images/photo1.png" alt="">
+                    </div>
+                    <div class="photo__item">
+                        <img src="images/photo2.png" alt="">
+                    </div>
+                </div>
+                <div class="photo__bottom df j-spc-btw">
+                    <div class="photo__count">6 из 40</div>
+                    <a href="" class="show__more">Показать еще
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="24" viewBox="0 0 13 24" fill="none">
+                            <path d="M6.00004 15.6548L2.06214 11.6031C1.99535 11.5344 1.91849 11.5 1.83167 11.5C1.74484 11.5 1.66798 11.5343 1.60133 11.6031L1.10027 12.1186C1.03352 12.1873 1 12.2664 1 12.3555C1 12.4449 1.03352 12.5239 1.10027 12.5926L5.76953 17.397C5.83631 17.4657 5.91317 17.5 6 17.5C6.08686 17.5 6.16369 17.4657 6.23047 17.397L10.8997 12.5929C10.9666 12.5241 11 12.445 11 12.3556C11 12.2664 10.9666 12.1873 10.8997 12.1186L10.399 11.6031C10.3322 11.5344 10.2553 11.5001 10.1684 11.5001C10.0817 11.5001 10.0049 11.5344 9.93807 11.6031L6.00004 15.6548Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="contact__content df">
+                <div class="contact__left">
+                    <img src="images/contact.png" alt="">
+                </div>
+                <div class="contact__right df f-column">
+                    <h2 class="section__title">Связь</h2>
+                    <p class="contact__text">Прежде всего, убеждённость некоторых оппонентов способствует подготовке и реализации укрепления моральных ценностей. </p>
+                    <div class="contact__info df">
+                        <div class="df f-column">
+                            <h3>рекрутинг</h3>
+                            <a class="email" href="mailto:info@info.ru">info@info.ru</a>
+                            <a class="phone" href="tel:8 800 888-88-88"><span>8 800</span> 888-88-88</a>
+                        </div>
+                        <div class="df f-column">
+                            <h3>СМИ</h3>
+                            <a  class="email" href="mailto:info@info.ru">info@info.ru</a>
+                            <a class="phone" href="tel:8 800 888-88-88"><span>8 800</span> 888-88-88</a>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn__white">Вступить в бригаду</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer__top df j-spc-btw a-center">
+            <div class="footer__left">
+                <a href="" class="footer__logo">
+                    <img src="images/footer-logo.svg" alt="">
+                </a>
+            </div>
+            <div class="footer__center">
+                <ul class="footer__menu">
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            Рекрутинг
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            Медиа
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            Мерч
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            Мерч
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            Новости
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__right">
+                <div class="footer__socials df">
+                    <a href="" class="header__socials--link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path d="M2.45383 14.8426L8.49174 16.8932L22.8264 8.12968C23.0342 8.00259 23.2471 8.28481 23.0679 8.44977L12.2155 18.4389L11.8119 24.0313C11.7812 24.4567 12.2936 24.6936 12.5978 24.3945L15.9392 21.1088L22.0477 25.7329C22.7061 26.2314 23.6595 25.8801 23.8371 25.0736L28.0905 5.76109C28.3331 4.65937 27.2536 3.72971 26.2 4.13317L2.42311 13.238C1.67724 13.5236 1.69755 14.5858 2.45383 14.8426Z" fill="#A3A3A3"/>
+                        </svg>
+                    </a>
+                    <a href="" class="header__socials--link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.8193 17.3066C26.8144 18.2782 27.8647 19.1923 28.7573 20.2619C29.1515 20.7372 29.5248 21.2276 29.8104 21.7792C30.215 22.5633 29.8485 23.4262 29.1454 23.473L24.775 23.471C23.6477 23.5646 22.7485 23.1108 21.9924 22.3401C21.3873 21.7237 20.8269 21.0678 20.2451 20.4306C20.0066 20.1702 19.7569 19.9252 19.4586 19.7315C18.862 19.3442 18.3441 19.4628 18.0032 20.0851C17.6559 20.718 17.5772 21.4188 17.5431 22.1241C17.4962 23.1533 17.1852 23.4238 16.1514 23.4709C13.9421 23.5751 11.8454 23.2409 9.89757 22.1264C8.18032 21.1439 6.84868 19.7568 5.68962 18.1865C3.43292 15.1289 1.70474 11.769 0.15151 8.31501C-0.198109 7.53682 0.0575753 7.11909 0.916197 7.10431C2.34198 7.07661 3.76756 7.07858 5.19501 7.10234C5.77449 7.11081 6.15811 7.44318 6.38186 7.99063C7.15325 9.88736 8.09713 11.6919 9.28191 13.3646C9.59743 13.81 9.91915 14.2553 10.3773 14.5687C10.8841 14.9158 11.27 14.8008 11.5085 14.2362C11.6598 13.8782 11.726 13.4926 11.7601 13.1091C11.8731 11.79 11.8879 10.4731 11.6898 9.15865C11.5682 8.33827 11.1061 7.80719 10.2875 7.65195C9.86977 7.5728 9.93197 7.41736 10.1342 7.17892C10.4855 6.7677 10.8159 6.51172 11.4745 6.51172H16.4139C17.1915 6.66519 17.3642 7.01451 17.4706 7.79694L17.4748 13.2835C17.4664 13.5864 17.6261 14.4852 18.1717 14.6857C18.6084 14.8284 18.8962 14.4791 19.1582 14.2022C20.3408 12.9471 21.1848 11.4637 21.9389 9.92777C22.2735 9.25239 22.5612 8.55098 22.8401 7.85017C23.0467 7.33012 23.3709 7.07424 23.9566 7.08558L28.7105 7.08982C28.8514 7.08982 28.994 7.09189 29.1305 7.11525C29.9316 7.25176 30.1511 7.59636 29.9037 8.37859C29.5139 9.60585 28.7554 10.6286 28.0138 11.6561C27.221 12.753 26.3731 13.8124 25.5869 14.9159C24.8646 15.9235 24.922 16.4315 25.8193 17.3066Z" fill="#A3A3A3"/>
+                        </svg>
+                    </a>
+                </div>
+                <a href="mailto:info@info.ru" class="footer__link footer__link--email">info@info.ru</a>
+                <a href="tel:8 800 888-88-88" class="footer__link footer__link--phone">8 800 888-88-88</a>
+            </div>
+        </div>
+        <div class="footer__bottom df j-spc-btw">
+            <div class="footer__left">
+                <a href="" class="">Политика конфиденциальности</a>
+            </div>
+            <div class="footer__center"></div>
+            <div class="footer__right">
+                <a href="" class="">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
