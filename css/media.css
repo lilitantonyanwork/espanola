@@ -69,6 +69,41 @@
     .main-direction__item:nth-child(3):before, .main-direction__item:nth-child(2):before, .main-direction__item:nth-child(6):before{
         background-size: 60%;
     }
+    .product__bottom .price{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .product__left{
+        max-width: 700px;
+
+    }
+    .product__right{
+        max-width: calc(100% - 740px);
+    }
+    .product__color--item{
+        max-height: 80px;
+        height: auto;
+    }
+    .product__item{
+
+        display: flex;
+        flex-direction: column;
+    }
+    .product__info{
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .product__item img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .banner__left {
+        position: relative;
+        z-index: 1;
+    }
 }
 @media screen and (max-width: 1100px){
     .main-direction__item{
@@ -166,6 +201,17 @@
     .top-news__content{
         margin-bottom: 0;
     }
+    .product__left{
+        max-width: 600px;
+
+    }
+    .product__right{
+        max-width: calc(100% - 640px);
+    }
+    .product__gallery--item{
+        height: 100px;
+    }
+
 }
 @media screen and (max-width: 1024px){
     .menu{
@@ -280,6 +326,38 @@
     .top-news__content{
         gap: 20px;
     }
+    .tradition__item img{
+        height: 300px;
+        /* max-width: 332px; */
+        width: 90%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .product__left {
+        max-width: 550px;
+    }
+    .product__right {
+        max-width: calc(100% - 550px);
+    }
+    .product__gallery--right{
+        height: 450px;
+    }
+    .product__gallery--right img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .product__gallery--left{
+        height: 450px;
+        width: 100px;
+    }
+    .product__bottom{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .product__bottom .btn__white{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 900px){
     .banner{
@@ -365,6 +443,9 @@
         bottom: unset;
         margin-top: 40px;
         position: relative;
+        width: 100%;
+        height: auto;
+        max-height: 300px;
 
     }
     .commander__content{
@@ -532,6 +613,44 @@
     .article {
         padding-top: 70px;
     }
+    .product__left {
+        max-width: 450px;
+    }
+    .product__right {
+        max-width: calc(100% - 470px);
+    }
+    .product__content {
+        gap: 20px;
+    }
+    .tab button{
+        font-size: 20px;
+    }
+    .product__size--list{
+        flex-wrap: wrap;
+    }
+    .product__color--list{
+        flex-wrap: wrap;
+    }
+    .product__color--item{
+        width: 50px;
+
+    }
+    .product__img {
+        height: 280px;
+    }
+    .product__info h3{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .product__bottom .price{
+        font-size: 30px;
+    }
+    .product__bottom .price .old{
+        font-size: 16px;
+    }
+    .product__bottom .price{
+        gap: 0;
+    }
 }
 @media screen and (max-width: 768px){
 .banner__right{
@@ -649,7 +768,55 @@
     .article__right h3{
         text-align: center;
     }
-
+    .product__content{
+        flex-direction: column;
+    }
+    .product__left{
+        max-width: 100%;
+    }
+    .product__right{
+        max-width: 100%;
+    }
+    .tab button {
+        font-size: 18px;
+    }
+    .tab{
+        padding-left: 0;
+    }
+    .product__item{
+        width: calc(100%/2 - 10px);
+    }
+    .product__list{
+        flex-wrap: wrap;
+    }
+    .product__item img{
+        width: 100%;
+    }
+    .merch .banner{
+        padding-top: 0;
+    }
+    .merch .banner__content{
+        flex-direction: column-reverse;
+    }
+    .merch .banner__right{
+        max-width: 100%;
+    }
+    .merch .banner__right img{
+        height: 300px;
+        object-fit: contain;
+    }
+    .merch .banner, .merch .banner__content{
+        height: auto;
+    }
+    .merch .banner__content{
+        gap: 20px;
+    }
+    .merch .banner__title{
+        text-align: center;
+    }
+    .merch .banner__text{
+        text-align: center;
+    }
 }
 @media screen and (max-width: 700px){
     .main-direction__item {
@@ -665,6 +832,17 @@
         background-size: 40%;
     }
 
+    .product__gallery{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .product__gallery--left{
+        flex-direction: row;
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        height: auto;
+    }
 }
 @media screen and (max-width: 600px){
     .banner__actions{
@@ -821,7 +999,7 @@
         max-width: 300px;
     }
     .tradition__list{
-        padding-bottom: 180px;
+        padding-bottom: 140px;
     }
     .become--rec .become__item{
         width: 100%;
@@ -863,6 +1041,35 @@
         height: 100%;
         object-fit: cover;
         border-radius: 8px;
+    }
+    .tab button {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .tabcontent{
+        padding: 20px;
+    }
+    .product {
+        padding-top: 70px;
+    }
+    .merch .banner__right{
+        height: auto;
+    }
+
+}
+@media screen and (max-width: 500px){
+    .tab{
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+    }
+    .tab button{
+        width: 100%;
+    }
+    .tab button.active{
+        background: #d9d9d9;
+        color: #0E0F11;
     }
 }
 @media screen and (max-width: 480px) {
@@ -986,9 +1193,19 @@
     .top-news__right .btn__white{
         width: 100%;
     }
-}
-@media screen and (max-width: 380px) {
-    .tradition__list{
-        padding-bottom: 100px;
+    .tradition__item img{
+        height: 300px;
+    }
+    .product__gallery--item {
+        height: 50px;
+    }
+    .product__right .btn__white{
+        width: 100%;
+    }
+    .product__title{
+        font-size: 28px ;
+    }
+    .product__item{
+        width: 100%;
     }
 }

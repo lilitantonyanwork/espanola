@@ -1465,3 +1465,272 @@ pre{
 .article{
     padding-top: 96px;
 }
+.merch .banner, .merch .banner__content{
+   height: 613px;
+}
+.merch .banner__right{
+    bottom:0;
+    max-width: 650px;
+}
+.merch .banner__right img{
+    height: 613px;
+    object-fit: cover;
+
+}
+.merch .banner__text{
+    margin-bottom: 10px;
+}
+.product__list{
+    margin-top: 40px;
+    gap: 40px 20px;
+}
+.product__item{
+    width: calc(100%/3 - 14px);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.product__img{
+    height: 380px;
+}
+.product__img .swiper-pagination-bullet{
+    width: 8px;
+    height: 8px;
+    border-radius: 0;
+    opacity: 50%;
+    background: #A3A3A3;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    cursor: pointer;
+}
+.product__img .swiper-pagination{
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    bottom: 21px;
+}
+.product__img  .swiper-pagination-bullet-active{
+    width: 20px;
+    background: #E6E6E6;
+    opacity: 80%;
+}
+.product__info{
+    padding: 30px 20px 27px;
+    background: #15171B;
+
+}
+.product__info h3{
+    color: #E6E6E6;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 42px;
+    font-family: 'Archivo', sans-serif;
+}
+.product__info .btn__white{
+    height: 54px;
+    width: 164px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+    color: #0E0F11;
+    margin-top: auto;
+}
+.product__bottom{
+    align-items: center;
+
+}
+.product__bottom .price{
+    color: #E6E6E6;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Archivo", sans-serif;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.product__bottom .price .old{
+    color: #A3A3A3;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    text-decoration: line-through;
+
+}
+
+.tab {
+    overflow: hidden;
+    padding-left: 30px;
+    position: relative;
+    top: 1px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    transition: 0.3s;
+    color: #A3A3A3;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 24px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    background:transparent;
+
+}
+
+
+
+/* Create an active/current tablink class */
+.tab button.active {
+    border-left: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+    border-top: 1px solid #D9D9D9;
+
+    background: #15171B;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 30px;
+    border: 1px solid #D9D9D9;
+    color: #C4C4C4;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.product__content{
+    gap: 40px;
+}
+.product__left{
+    max-width: 762px;
+    width: 100%;
+    gap: 15px;
+}
+.product__right{
+    max-width: calc(100% - 802px);
+    width: 100%;
+}
+.product__gallery{
+    gap: 15px;
+}
+.product__gallery--left{
+    width: 153px;
+    gap: 10px;
+    height: 541px;
+}
+.product__gallery--item{
+    border-radius: 8px;
+    height: 138px;
+    overflow: hidden;
+}
+.product__gallery--item img{
+    height: 100%;
+}
+.product__gallery--right{
+    max-height: 541px;
+    height: 100%;
+    overflow: hidden;
+}
+.product__gallery--right img{
+    height: 100%;
+}
+.product__title{
+    font-family: 'Archivo', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.product__sku{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+}
+.product__sku span{
+    color: #A3A3A3;
+    font-weight: 500;
+}
+
+.product__color h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+.product__color--list{
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.product__color--item{
+    width: 80px;
+    height: 80px;
+    border: 2px solid transparent;
+}
+.product__color--active{
+    border: 2px solid #E6E6E6
+}
+.product__size{
+    margin-bottom: 30px;
+}
+.product__size h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+.product__size--list{
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.product__size--item{
+    border: 1px solid #A3A3A3;
+    height: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #A3A3A3;
+}
+.product__size--active{
+    border: 1px solid #E6E6E6;
+    color: #FFFFFF;
+}
+.product__size .show__more{
+    color: #A3A3A3;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 18px;
+}
+.product__right .price{
+    color: #E6E6E6;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Archivo', sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+.product__right .btn__white{
+    width: 226px;
+}
+.product__details{
+    margin-top: 96px;
+}
+.merch-inner{
+    background: #15171B;
+}
+.product{
+    padding-top: 106px;
+}
