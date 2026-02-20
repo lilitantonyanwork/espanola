@@ -1630,11 +1630,16 @@ pre{
 }
 .product__gallery--item img{
     height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .product__gallery--right{
     max-height: 541px;
     height: 100%;
     overflow: hidden;
+}
+.merch-inner footer{
+    background: #0E0F11;
 }
 .product__gallery--right img{
     height: 100%;
